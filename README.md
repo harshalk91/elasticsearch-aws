@@ -11,8 +11,8 @@ Assumptions:
 # Steps:
 1. Edit terraform.tfvars(located inside terraform directory) and enter your details
 2. Traverse to terraform directory and enter : 
-     terraform plan -target=module.create-instance
-     terraform apply -target=module.create-instance ( Type yes to confirm)
+   1. terraform plan -target=module.create-instance
+   2. terraform apply -target=module.create-instance ( Type yes to confirm)
 4. Once instance created traverse back to main directrory and edit ec2.ini and make changes as per your environment
 5. Execute:
-     ansible-playbook -i ec2.py playbooks/elasticsearch.yml
+    ansible-playbook -i ec2.py playbooks/elasticsearch.yml
