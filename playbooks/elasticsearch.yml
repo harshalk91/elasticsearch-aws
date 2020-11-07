@@ -1,6 +1,6 @@
 ---
 - hosts: tag_type_elastic 
-  user: {{ remote_user }}
+  user: "{{ remote_user }}"
   become: yes
   become_user: root
   roles:
